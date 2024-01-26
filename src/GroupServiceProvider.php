@@ -1,6 +1,6 @@
 <?php
 
-namespace M15\LaraGroups;
+namespace M15Studio\LaraGroups;
 
 use Illuminate\Support\ServiceProvider;
 
