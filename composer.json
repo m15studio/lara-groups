@@ -9,6 +9,12 @@
 			"email": "studio@m15.it"
 		}
 	],
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/m15studio/lara-groups"
+		}
+	],
 	"autoload": {
 		"psr-4": {
 			"YourNamespace\\": "src/"
@@ -18,7 +24,8 @@
 	"prefer-stable": true,
 	"require": {
 		"php": "^8.0",
-		"laravel/framework": "^10.0"
+		"laravel/framework": "^10.0",
+		"m15studio/lara-groups": "dev-main"
 	},
 	"extra": {
 		"laravel": {
