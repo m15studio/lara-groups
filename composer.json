@@ -1,7 +1,6 @@
 {
 	"name": "m15studio/lara-groups",
 	"description": "A groups management functionality to Laravel.",
-	"type": "library",
 	"license": "MIT",
 	"authors": [
 		{
