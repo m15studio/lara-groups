@@ -25,7 +25,7 @@
 	"require": {
 		"php": "^8.0",
 		"laravel/framework": "^10.0",
-		"m15studio/lara-groups": "dev-main"
+		"m15studio/lara-groups": "dev-master"
 	},
 	"extra": {
 		"laravel": {
