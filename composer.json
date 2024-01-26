@@ -14,14 +14,16 @@
 			"YourNamespace\\": "src/"
 		}
 	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
 	"require": {
-		"php": "^8.1",
+		"php": "^8.0",
 		"laravel/framework": "^10.0"
 	},
 	"extra": {
 		"laravel": {
 			"providers": [
-				"M15\\GroupServiceProvider"
+				"M15\\LaraGroups\\GroupServiceProvider"
 			]
 		}
 	}
