@@ -17,7 +17,7 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"YourNamespace\\": "src/"
+			"M15\\LaraGroups": "src/"
 		}
 	},
 	"minimum-stability": "dev",
