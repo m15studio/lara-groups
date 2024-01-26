@@ -1,0 +1,28 @@
+{
+	"name": "m15studio/lara-groups",
+	"description": "A groups management functionality to Laravel.",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "M15 Studio",
+			"email": "studio@m15.it"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"YourNamespace\\": "src/"
+		}
+	},
+	"require": {
+		"php": "^8.1",
+		"laravel/framework": "^10.0"
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"M15\\GroupServiceProvider"
+			]
+		}
+	}
+}
