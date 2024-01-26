@@ -17,7 +17,7 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"M15Studio\\LaraGroups": "src/"
+			"M15Studio\\LaraGroups\\": "src/"
 		}
 	},
 	"minimum-stability": "dev",

@@ -1,6 +1,6 @@
 <?php
 
-namespace M15\LaraGroups\Models;
+namespace M15Studio\LaraGroups\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
