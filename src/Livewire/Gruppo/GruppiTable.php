@@ -30,7 +30,7 @@ class GruppiTable extends Component {
 
         $gruppi = Gruppo::search($this->search)->orderBy($this->sortField, $this->sortDirection)->paginate($this->perPage);
 
-        return view('livewire.gruppo.gruppi-table', compact([
+        return view('m15studio::livewire.gruppo.gruppi-table', compact([
             'gruppi',
         ]));
     }

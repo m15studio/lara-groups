@@ -31,6 +31,6 @@ class FormNuovoGruppo extends Component {
     }
 
     public function render() {
-        return view('livewire.gruppo.form-nuovo-gruppo');
+        return view('m15studio::livewire.gruppo.form-nuovo-gruppo');
     }
 }
