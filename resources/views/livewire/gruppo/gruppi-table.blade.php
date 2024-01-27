@@ -2,9 +2,6 @@
 
      <div>
           <div class="flex items-center flex-wrap" id="tuttiSoci">
-               <x-slot name="title">
-                    Tutti i gruppi
-               </x-slot>
 
                <div class="w-full lg:w-auto">
                     <div class="flex items-center items-center space-x-2 space-y-2 lg:space-y-0 mb-4">
@@ -15,6 +12,10 @@
                                    Elimina
                               </button>
                               <x-dialog-modal wire:model="confermaEliminaGruppo">
+                                   <x-slot name="title">
+                                        Tutti i gruppi
+                                   </x-slot>
+
                                    <x-slot name="content">
                                         <div class="sm:flex sm:items-start">
                                              <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
