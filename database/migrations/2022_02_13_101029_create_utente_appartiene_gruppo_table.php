@@ -14,10 +14,10 @@ return new class extends Migration {
         Schema::create('utente_appartiene_gruppo', function (Blueprint $table) {
             //  $table->id();
             $table->primary(['user_id', 'gruppo_id']);
-            $table->foreignId('user_id')->nullable()->constrained(
+            $table->foreignId('user_id')->constrained(
                 'users', 'id'
             );
-            $table->foreignId('gruppo_id')->nullable()->constrained(
+            $table->foreignId('gruppo_id')->constrained(
                 'gruppo', 'id_gruppo'
             );
             $table->timestamps();
