@@ -26,7 +26,7 @@ class Gruppo extends Model {
 
     public static function search($search) {
         // query x eloquent
-        $query = Gruppo::select("gruppo.id", "gruppo_nome")->withCount("UtentiAppartengonoGruppo");
+        $query = Gruppo::select("gruppo.id_gruppo", "gruppo_nome")->withCount("UtentiAppartengonoGruppo");
 
         // query x sql
         //$query = \DB::select('select "gruppo"."id", "gruppo_nome", (select count(*) from "users" inner join "utente_appartiene_gruppo" on "users"."id" = "utente_appartiene_gruppo"."user_id" where "gruppo"."id" = "utente_appartiene_gruppo"."gruppo_id") as "utenti_appartengono_gruppo_count", (select sum("ordine_importo_totale") from "ordine" inner join "utente_appartiene_gruppo" on "ordine"."ordine_IDUtente_fk" = "utente_appartiene_gruppo"."user_id" where "ordine"."ordine_IDUtente_fk" = "utente_appartiene_gruppo"."user_id" AND "gruppo"."id" = "utente_appartiene_gruppo"."gruppo_id") as "fatturato" from "gruppo"');
@@ -40,7 +40,7 @@ class Gruppo extends Model {
     public static function isInGruppo($gruppo_slug, $IDUtente) {
         $IDGruppo = Gruppo::select("id")->where("gruppo_slug", $gruppo_slug)->first();
         if ($IDGruppo) {
-            $in_gruppo = Gruppo::find($IDGruppo->id)->utentiAppartengonoGruppo()->select("id")->get()->toArray();
+            $in_gruppo = Gruppo::find($IDGruppo->id)->utentiAppartengonoGruppo()->select("id_gruppo")->get()->toArray();
             if (in_array($IDUtente, array_column($in_gruppo, 'id'))) {
                 return true;
             } else {

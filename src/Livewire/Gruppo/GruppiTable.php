@@ -37,7 +37,7 @@ class GruppiTable extends Component {
 
     public function updatedSelezionaTuttiGruppi($value) {
         if ($value) {
-            $this->gruppiSelezionati = Gruppo::pluck("id")->map(fn($item) => (string) $item)->toArray();
+            $this->gruppiSelezionati = Gruppo::pluck("id_gruppo")->map(fn($item) => (string) $item)->toArray();
             if (($key = array_search(1, $this->gruppiSelezionati)) !== false) {
                 unset($this->gruppiSelezionati[$key]);
             }
