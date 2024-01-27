@@ -23,7 +23,7 @@
 
           <div class="space-y-5 mt-5">
 
-               <livewire:gruppo.form-iscrivi-utente-gruppo :id_gruppo='$gruppo->id'>
+               <livewire:gruppo.form-iscrivi-utente-gruppo :id_gruppo='$gruppo->id_gruppo'>
 
                     @livewire('gruppo.utenti-gruppo-table', ['gruppo' => $gruppo])
 

@@ -151,15 +151,15 @@
 
                                              <tr class="@if ($loop->iteration % 2 == 0) bg-gray-50 @else bg-white @endif hover:bg-gray-100 transition-colors transition duration-150 ease-in-out">
                                                   <td class="px-6 py-4 whitespace-nowrap">
-                                                       @if($gruppo->id != 1)
-                                                       <input type="checkbox" wire:model="gruppiSelezionati" value="{{ $gruppo->id }}" id="check_{{ $gruppo->id }}" name="check_{{ $gruppo->id }}" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" />
+                                                       @if($gruppo->id_gruppo != 1)
+                                                       <input type="checkbox" wire:model="gruppiSelezionati" value="{{ $gruppo->id_gruppo }}" id="check_{{ $gruppo->id_gruppo }}" name="check_{{ $gruppo->id_gruppo }}" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" />
                                                        @endif
                                                   </td>
                                                   <td class="px-6 py-4 whitespace-nowrap">
                                                        <div class="flex items-center">
                                                             <div class="ml-4">
                                                                  <div class="text-sm font-medium text-gray-900">
-                                                                      #{{ $gruppo->id }} {{ $gruppo->gruppo_nome }}
+                                                                      #{{ $gruppo->id_gruppo }} {{ $gruppo->gruppo_nome }}
                                                                  </div>
                                                             </div>
                                                        </div>
@@ -175,7 +175,7 @@
                                                   </td>
 
                                                   <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                                       <a href="{{ url('/gruppo') }}/{{ $gruppo->id }}/" class="text-indigo-600 hover:text-indigo-900">Vedi</a>
+                                                       <a href="{{ url('/gruppo') }}/{{ $gruppo->id_gruppo }}/" class="text-indigo-600 hover:text-indigo-900">Vedi</a>
                                                   </td>
                                              </tr>
                                              @endforeach
