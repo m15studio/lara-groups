@@ -5,6 +5,6 @@
           </h1>
      </div>
      <div class="mt-4 flex sm:mt-0 sm:ml-4">
-          @livewire('m15studio::gruppo.form-nuovo-gruppo')
+          @livewire('gruppo.form-nuovo-gruppo')
      </div>
 </div>
