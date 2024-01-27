@@ -21,7 +21,7 @@ class Gruppo extends Model {
      */
 
     public function utentiAppartengonoGruppo() {
-        return $this->belongsToMany(User::class, 'utente_appartiene_gruppo', 'gruppo_id', 'user_id', 'id', 'id_gruppo')->withTimestamps();
+        return $this->belongsToMany(User::class, 'utente_appartiene_gruppo', 'gruppo_id', 'user_id', 'id_gruppo', 'id')->withTimestamps();
     }
 
     public static function search($search) {
