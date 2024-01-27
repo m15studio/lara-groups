@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-backend-layout>
 
      @section('header')
      @include("m15studio::moduli.gruppo.partials.gruppo_header")
@@ -13,4 +13,4 @@
      </div>
      @endsection
 
-</x-app-layout>
+</x-backend-layout>
