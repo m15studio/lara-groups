@@ -3,19 +3,13 @@
           Aggiungi gruppo
      </button>
      <x-dialog-modal wire:model="nuovoGruppo" maxWidth="md">
+          <x-slot name="title">
+               Crea nuovo gruppo
+          </x-slot>
+
           <x-slot name="content" id="creaGruppoContent">
                <form wire:submit.prevent="creaGruppo" id="form_nuovo_gruppo" name="form_nuovo_gruppo">
                     <div class="">
-                         <div class="pb-5 sm:flex sm:items-start sm:justify-between">
-                              <div>
-                                   <h3 class="text-lg leading-6 font-medium text-gray-900">
-                                        Crea nuovo gruppo
-                                   </h3>
-                                   <p class="mt-1 max-w-2xl text-sm text-gray-500">
-
-                                   </p>
-                              </div>
-                         </div>
 
                          <div class="grid grid-cols-1 gap-y-6 gap-x-4">
                               <fieldset>
