@@ -7,7 +7,10 @@ use Illuminate\Support\ServiceProvider;
 class GroupServiceProvider extends ServiceProvider {
     public function boot() {
         // Esegui le migrazioni del database
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+
+        $this->publishes([
+            __DIR__ . '/../databases/migrations' => database_path('migrations'),
+        ], 'migrations');
     }
 
     public function register() {
