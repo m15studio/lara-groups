@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Gruppo extends Model {
     use HasFactory;
-    protected $table = "gruppo";
+    protected $table      = "gruppo";
+    protected $primaryKey = "id_gruppo";
 
     protected $fillable = [
         'gruppo_nome',
