@@ -10,7 +10,13 @@ class GroupServiceProvider extends ServiceProvider {
 
         $this->publishes([
             __DIR__ . '/../database/migrations' => database_path('migrations'),
-        ], 'migrations');
+        ], 'm15studio');
+
+        $this->loadRoutesFrom(__DIR__ . '/../routes/routes.php');
+        // Views
+        $sourceViewsPath = __DIR__ . '/../resources/views';
+        $this->loadViewsFrom($sourceViewsPath, 'm15studio');
+
     }
 
     public function register() {
