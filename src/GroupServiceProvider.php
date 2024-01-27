@@ -9,7 +9,7 @@ class GroupServiceProvider extends ServiceProvider {
         // Esegui le migrazioni del database
 
         $this->publishes([
-            __DIR__ . '/../databases/migrations' => database_path('migrations'),
+            __DIR__ . '/../database/migrations' => database_path('migrations'),
         ], 'migrations');
     }
 
