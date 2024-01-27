@@ -3,6 +3,7 @@ use Illuminate\Support\Facades\Route;
 use M15Studio\LaraGroups\Controllers\GruppoController;
 
 Route::middleware([
+    'web',
     'auth',
     'verified',
 ])->group(function () {
