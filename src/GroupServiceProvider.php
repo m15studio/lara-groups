@@ -4,6 +4,8 @@ namespace M15Studio\LaraGroups;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
+use M15Studio\LaraGroups\Livewire\Gruppo\FormNuovoGruppo;
+use M15Studio\LaraGroups\Livewire\Gruppo\GruppiTable;
 
 class GroupServiceProvider extends ServiceProvider {
     public function boot() {
@@ -19,8 +21,8 @@ class GroupServiceProvider extends ServiceProvider {
         $this->loadViewsFrom($sourceViewsPath, 'm15studio');
 
         if (class_exists(Livewire::class)) {
-            Livewire::component('gruppo.gruppi-table', Gruppo\GruppiTable::class);
-            Livewire::component('gruppo.form-nuovo-gruppo', Gruppo\FormNuovoGruppo::class);
+            Livewire::component('gruppo.gruppi-table', GruppiTable::class);
+            Livewire::component('gruppo.form-nuovo-gruppo', FormNuovoGruppo::class);
         }
 
     }
