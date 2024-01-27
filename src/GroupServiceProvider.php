@@ -17,6 +17,10 @@ class GroupServiceProvider extends ServiceProvider {
         $sourceViewsPath = __DIR__ . '/../resources/views';
         $this->loadViewsFrom($sourceViewsPath, 'm15studio');
 
+        if (class_exists(Livewire::class)) {
+            Livewire::component('gruppo.gruppi-table', Gruppo\GruppiTable::class);
+        }
+
     }
 
     public function register() {
