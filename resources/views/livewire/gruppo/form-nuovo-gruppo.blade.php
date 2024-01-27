@@ -28,14 +28,14 @@
                               </fieldset>
                          </div>
                     </div>
-                    <div class="mt-5 sm:mt-12 sm:flex sm:flex-row-reverse">
+                    <x-slot name="footer">
                          <button class="ml-2 button button  text-white bg-bwt-pink hover:bg-bwt-pink-hover focus:ring-purple-500" form="form_nuovo_gruppo">
                               Aggiorna
                          </button>
                          <button wire:click="$toggle('nuovoGruppo')" wire:loading.attr="disabled" class="button border-gray-200  text-gray-700 bg-white hover:bg-gray-50 focus:ring-purple-500">
                               Cancella
                          </button>
-                    </div>
+                    </x-slot>
                </form>
           </x-slot>
      </x-dialog-modal>
