@@ -13,7 +13,7 @@ class GruppoController extends Controller {
      */
     public function index() {
         $gruppo_tutti = Gruppo::all();
-        return view('moduli.gruppo.tuttiGruppi', compact([
+        return view('m15studio::moduli.gruppo.tuttiGruppi', compact([
             'gruppo_tutti',
         ]));
     }
@@ -45,7 +45,7 @@ class GruppoController extends Controller {
      */
     public function show($id) {
         $gruppo = Gruppo::find($id);
-        return view('moduli.gruppo.schedaGruppo', compact([
+        return view('m15studio::moduli.gruppo.schedaGruppo', compact([
             'gruppo',
         ]));
     }
