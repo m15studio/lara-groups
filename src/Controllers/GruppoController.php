@@ -2,6 +2,7 @@
 
 namespace M15Studio\LaraGroups\Controllers;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use M15Studio\LaraGroups\Models\Gruppo;
 
 class GruppoController extends Controller {
